@@ -21,7 +21,7 @@ ETH Wallet Manager App
 ## Wymagania
 
 - Aplikacja na iPhone pozwalająca na zarządzanie portfelami ETH użytkownika. 
-- Aplikacja będzie pozwalała na pogląd listy swoich portfeli. 
+- Aplikacja będzie pozwalała na podgląd listy swoich portfeli. 
 - W widoku listy porfeli będzie możliwość dodania (wygenerowania) nowego portfela. 
 - Po kliknięciu na portfel, pokażą się szczegóły danego portfela (adres, balans itp.).
 - W szczegółach danego portfela będzie możliwość wykonania transferu etheru na inne konto.
@@ -31,7 +31,7 @@ ETH Wallet Manager App
 
 ### Framework(i) iOS SDK
 
-- CoreImage - generowanie i skanowanie kodow QR zawierających dane (m.in. adres konta ETH użytkownika), za pomocą których będzie można wykonać transfer funduszy.
+- CoreImage - generowanie i skanowanie kodów QR zawierających dane (m.in. adres konta ETH użytkownika), za pomocą których będzie można wykonać transfer funduszy.
 
 ### Frameworki/biblioteki zewnętrzne
 
