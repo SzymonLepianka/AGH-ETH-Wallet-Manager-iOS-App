@@ -1,0 +1,4 @@
+github "krzyzanowskim/CryptoSwift" "1.6.0"
+github "takuoka/PullToBounce" "0.0.3"
+github "yuzushioh/CryptoEthereumSwift" "2.0.0"
+github "yuzushioh/EthereumKit" "2.0.1"
