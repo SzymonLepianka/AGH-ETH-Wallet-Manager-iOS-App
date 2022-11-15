@@ -14,6 +14,10 @@
 		AC9020A52923A458002625BC /* EthWalletManagerAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9020A42923A458002625BC /* EthWalletManagerAppTests.swift */; };
 		AC9020AF2923A458002625BC /* EthWalletManagerAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9020AE2923A458002625BC /* EthWalletManagerAppUITests.swift */; };
 		AC9020B12923A458002625BC /* EthWalletManagerAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9020B02923A458002625BC /* EthWalletManagerAppUITestsLaunchTests.swift */; };
+		AC9020BE2923A688002625BC /* EthWallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9020BD2923A688002625BC /* EthWallet.swift */; };
+		AC9020C02923A8FE002625BC /* WalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9020BF2923A8FE002625BC /* WalletView.swift */; };
+		AC9020C22923AAAB002625BC /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9020C12923AAAB002625BC /* DetailView.swift */; };
+		AC9020C42923AB3C002625BC /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9020C32923AB3C002625BC /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		AC9020AA2923A458002625BC /* EthWalletManagerAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EthWalletManagerAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC9020AE2923A458002625BC /* EthWalletManagerAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthWalletManagerAppUITests.swift; sourceTree = "<group>"; };
 		AC9020B02923A458002625BC /* EthWalletManagerAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthWalletManagerAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AC9020BD2923A688002625BC /* EthWallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthWallet.swift; sourceTree = "<group>"; };
+		AC9020BF2923A8FE002625BC /* WalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletView.swift; sourceTree = "<group>"; };
+		AC9020C12923AAAB002625BC /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		AC9020C32923AB3C002625BC /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +106,10 @@
 				AC9020952923A457002625BC /* ContentView.swift */,
 				AC9020972923A458002625BC /* Assets.xcassets */,
 				AC9020992923A458002625BC /* Preview Content */,
+				AC9020BD2923A688002625BC /* EthWallet.swift */,
+				AC9020BF2923A8FE002625BC /* WalletView.swift */,
+				AC9020C12923AAAB002625BC /* DetailView.swift */,
+				AC9020C32923AB3C002625BC /* CardView.swift */,
 			);
 			path = EthWalletManagerApp;
 			sourceTree = "<group>";
@@ -259,6 +271,10 @@
 			files = (
 				AC9020962923A457002625BC /* ContentView.swift in Sources */,
 				AC9020942923A457002625BC /* EthWalletManagerAppApp.swift in Sources */,
+				AC9020BE2923A688002625BC /* EthWallet.swift in Sources */,
+				AC9020C22923AAAB002625BC /* DetailView.swift in Sources */,
+				AC9020C42923AB3C002625BC /* CardView.swift in Sources */,
+				AC9020C02923A8FE002625BC /* WalletView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

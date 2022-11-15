@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct EthWalletManagerAppApp: App {
+    @State private var wallets = EthWallet.sampleData
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                WalletView(wallets: $wallets)
+            }
         }
     }
 }
