@@ -18,6 +18,9 @@
 		AC9020C02923A8FE002625BC /* WalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9020BF2923A8FE002625BC /* WalletView.swift */; };
 		AC9020C22923AAAB002625BC /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9020C12923AAAB002625BC /* DetailView.swift */; };
 		AC9020C42923AB3C002625BC /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9020C32923AB3C002625BC /* CardView.swift */; };
+		ACB59CF4292CE1B100CFC0AE /* web3swift in Frameworks */ = {isa = PBXBuildFile; productRef = ACB59CF3292CE1B100CFC0AE /* web3swift */; };
+		ACB59CF7292CE32700CFC0AE /* ESPullToRefresh in Frameworks */ = {isa = PBXBuildFile; productRef = ACB59CF6292CE32700CFC0AE /* ESPullToRefresh */; };
+		ACB59CF9292CE54800CFC0AE /* DetailEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB59CF8292CE54800CFC0AE /* DetailEditView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,7 @@
 		AC9020BF2923A8FE002625BC /* WalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletView.swift; sourceTree = "<group>"; };
 		AC9020C12923AAAB002625BC /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		AC9020C32923AB3C002625BC /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		ACB59CF8292CE54800CFC0AE /* DetailEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEditView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACB59CF7292CE32700CFC0AE /* ESPullToRefresh in Frameworks */,
+				ACB59CF4292CE1B100CFC0AE /* web3swift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +116,7 @@
 				AC9020BF2923A8FE002625BC /* WalletView.swift */,
 				AC9020C12923AAAB002625BC /* DetailView.swift */,
 				AC9020C32923AB3C002625BC /* CardView.swift */,
+				ACB59CF8292CE54800CFC0AE /* DetailEditView.swift */,
 			);
 			path = EthWalletManagerApp;
 			sourceTree = "<group>";
@@ -155,6 +162,10 @@
 			dependencies = (
 			);
 			name = EthWalletManagerApp;
+			packageProductDependencies = (
+				ACB59CF3292CE1B100CFC0AE /* web3swift */,
+				ACB59CF6292CE32700CFC0AE /* ESPullToRefresh */,
+			);
 			productName = EthWalletManagerApp;
 			productReference = AC9020902923A457002625BC /* EthWalletManagerApp.app */;
 			productType = "com.apple.product-type.application";
@@ -227,6 +238,10 @@
 				Base,
 			);
 			mainGroup = AC9020872923A457002625BC;
+			packageReferences = (
+				ACB59CF2292CE1B100CFC0AE /* XCRemoteSwiftPackageReference "web3swift" */,
+				ACB59CF5292CE32700CFC0AE /* XCRemoteSwiftPackageReference "pull-to-refresh" */,
+			);
 			productRefGroup = AC9020912923A457002625BC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -271,6 +286,7 @@
 			files = (
 				AC9020962923A457002625BC /* ContentView.swift in Sources */,
 				AC9020942923A457002625BC /* EthWalletManagerAppApp.swift in Sources */,
+				ACB59CF9292CE54800CFC0AE /* DetailEditView.swift in Sources */,
 				AC9020BE2923A688002625BC /* EthWallet.swift in Sources */,
 				AC9020C22923AAAB002625BC /* DetailView.swift in Sources */,
 				AC9020C42923AB3C002625BC /* CardView.swift in Sources */,
@@ -593,6 +609,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ACB59CF2292CE1B100CFC0AE /* XCRemoteSwiftPackageReference "web3swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/web3swift-team/web3swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		ACB59CF5292CE32700CFC0AE /* XCRemoteSwiftPackageReference "pull-to-refresh" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/eggswift/pull-to-refresh";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ACB59CF3292CE1B100CFC0AE /* web3swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ACB59CF2292CE1B100CFC0AE /* XCRemoteSwiftPackageReference "web3swift" */;
+			productName = web3swift;
+		};
+		ACB59CF6292CE32700CFC0AE /* ESPullToRefresh */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ACB59CF5292CE32700CFC0AE /* XCRemoteSwiftPackageReference "pull-to-refresh" */;
+			productName = ESPullToRefresh;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AC9020882923A457002625BC /* Project object */;
 }
