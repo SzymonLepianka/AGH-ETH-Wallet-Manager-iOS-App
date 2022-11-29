@@ -14,7 +14,7 @@ struct DetailEditView: View {
     
     var body: some View {
         Form {
-            Section(header: Text("Wallet Info")) {
+            Section(header: Text("Wallet name")) {
                 TextField("Title", text: $data.title)
                 //                HStack {
                 //                    Slider(value: $data.lengthInMinutes, in: 5...30, step: 1) {
