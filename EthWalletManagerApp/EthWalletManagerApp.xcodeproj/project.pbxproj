@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AC19436D293618FF00BBDC15 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC19436B293618FE00BBDC15 /* Model.xcdatamodeld */; };
+		AC19436F29361A9300BBDC15 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC19436E29361A9300BBDC15 /* PersistenceController.swift */; };
 		AC9020942923A457002625BC /* EthWalletManagerAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9020932923A457002625BC /* EthWalletManagerAppApp.swift */; };
 		AC9020962923A457002625BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9020952923A457002625BC /* ContentView.swift */; };
 		AC9020982923A458002625BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC9020972923A458002625BC /* Assets.xcassets */; };
@@ -43,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		AC19436C293618FE00BBDC15 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		AC19436E29361A9300BBDC15 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 		AC9020902923A457002625BC /* EthWalletManagerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EthWalletManagerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC9020932923A457002625BC /* EthWalletManagerAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthWalletManagerAppApp.swift; sourceTree = "<group>"; };
 		AC9020952923A457002625BC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -90,7 +92,6 @@
 		AC9020872923A457002625BC = {
 			isa = PBXGroup;
 			children = (
-				AC19436B293618FE00BBDC15 /* Model.xcdatamodeld */,
 				AC9020922923A457002625BC /* EthWalletManagerApp */,
 				AC9020A32923A458002625BC /* EthWalletManagerAppTests */,
 				AC9020AD2923A458002625BC /* EthWalletManagerAppUITests */,
@@ -111,6 +112,7 @@
 		AC9020922923A457002625BC /* EthWalletManagerApp */ = {
 			isa = PBXGroup;
 			children = (
+				AC19436B293618FE00BBDC15 /* Model.xcdatamodeld */,
 				AC9020932923A457002625BC /* EthWalletManagerAppApp.swift */,
 				AC9020952923A457002625BC /* ContentView.swift */,
 				AC9020972923A458002625BC /* Assets.xcassets */,
@@ -120,6 +122,7 @@
 				AC9020C12923AAAB002625BC /* DetailView.swift */,
 				AC9020C32923AB3C002625BC /* CardView.swift */,
 				ACB59CF8292CE54800CFC0AE /* DetailEditView.swift */,
+				AC19436E29361A9300BBDC15 /* PersistenceController.swift */,
 			);
 			path = EthWalletManagerApp;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC19436F29361A9300BBDC15 /* PersistenceController.swift in Sources */,
 				AC9020962923A457002625BC /* ContentView.swift in Sources */,
 				AC9020942923A457002625BC /* EthWalletManagerAppApp.swift in Sources */,
 				ACB59CF9292CE54800CFC0AE /* DetailEditView.swift in Sources */,

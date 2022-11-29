@@ -59,6 +59,7 @@ struct WalletView: View {
 }
 
 func createAccount(title: String) -> EthWallet {
+    
     let password = "web3swift"
     let bitsOfEntropy: Int = 128 // Entropy is a measure of password strength. Usually used 128 or 256 bits.
     let mnemonics = try! BIP39.generateMnemonics(bitsOfEntropy: bitsOfEntropy)!
