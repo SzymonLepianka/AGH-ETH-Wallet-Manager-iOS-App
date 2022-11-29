@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC19436D293618FF00BBDC15 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC19436B293618FE00BBDC15 /* Model.xcdatamodeld */; };
 		AC9020942923A457002625BC /* EthWalletManagerAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9020932923A457002625BC /* EthWalletManagerAppApp.swift */; };
 		AC9020962923A457002625BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9020952923A457002625BC /* ContentView.swift */; };
 		AC9020982923A458002625BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC9020972923A458002625BC /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC19436C293618FE00BBDC15 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		AC9020902923A457002625BC /* EthWalletManagerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EthWalletManagerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC9020932923A457002625BC /* EthWalletManagerAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthWalletManagerAppApp.swift; sourceTree = "<group>"; };
 		AC9020952923A457002625BC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 		AC9020872923A457002625BC = {
 			isa = PBXGroup;
 			children = (
+				AC19436B293618FE00BBDC15 /* Model.xcdatamodeld */,
 				AC9020922923A457002625BC /* EthWalletManagerApp */,
 				AC9020A32923A458002625BC /* EthWalletManagerAppTests */,
 				AC9020AD2923A458002625BC /* EthWalletManagerAppUITests */,
@@ -287,6 +290,7 @@
 				AC9020962923A457002625BC /* ContentView.swift in Sources */,
 				AC9020942923A457002625BC /* EthWalletManagerAppApp.swift in Sources */,
 				ACB59CF9292CE54800CFC0AE /* DetailEditView.swift in Sources */,
+				AC19436D293618FF00BBDC15 /* Model.xcdatamodeld in Sources */,
 				AC9020BE2923A688002625BC /* EthWallet.swift in Sources */,
 				AC9020C22923AAAB002625BC /* DetailView.swift in Sources */,
 				AC9020C42923AB3C002625BC /* CardView.swift in Sources */,
@@ -641,6 +645,19 @@
 			productName = ESPullToRefresh;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		AC19436B293618FE00BBDC15 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AC19436C293618FE00BBDC15 /* Model.xcdatamodel */,
+			);
+			currentVersion = AC19436C293618FE00BBDC15 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = AC9020882923A457002625BC /* Project object */;
 }
