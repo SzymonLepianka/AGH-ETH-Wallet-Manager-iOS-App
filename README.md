@@ -35,9 +35,10 @@ ETH Wallet Manager App
 
 ### Frameworki/biblioteki zewnętrzne
 
-1. ~~EthereumKit, https://github.com/yuzushioh/EthereumKit ; Biblioteka zostanie użyta do tworzenia nowych portfeli, transferu funduszy. Okazało się, że biblioteka nie można się zbudować, przez problemy z zależnościami.~~
-2. web3swift, https://github.com/web3swift-team/web3swift ; Zamiennik EthereumKit
-2. PullToBounce, https://github.com/takuoka/PullToBounce ; Biblioteka zostanie użyta do odświeżenia widoku szczegołów portfela, aby sprawdzić czy np. fundusze zostały przesłane.
+1. ~~EthereumKit, https://github.com/yuzushioh/EthereumKit ;~~ Biblioteka zostanie użyta do tworzenia nowych portfeli, transferu funduszy. Okazało się, że biblioteka nie można się zbudować, przez problemy z zależnościami.
+2. web3swift, https://github.com/web3swift-team/web3swift ; Zamiennik EthereumKit.
+3. ~~PullToBounce, https://github.com/takuoka/PullToBounce ;~~ Biblioteka zostanie użyta do odświeżenia widoku szczegołów portfela, aby sprawdzić czy np. fundusze zostały przesłane. Okazało się, że biblioteka nie jest obsługiwana przez Swift Package Manager.
+4. pull-to-refresh, https://github.com/eggswift/pull-to-refresh ; Zamiennik PullToBounce.
 
 ## Dane
 
