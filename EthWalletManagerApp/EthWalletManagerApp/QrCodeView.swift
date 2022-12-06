@@ -13,7 +13,7 @@ struct QrCodeView: View {
     
     let context = CIContext()
     let filter = CIFilter.qrCodeGenerator()
-
+    
     var body: some View {
         Form {
             Section(header: Text("QR")) {
@@ -28,13 +28,13 @@ struct QrCodeView: View {
     }
     func generateQRCode(from string: String) -> UIImage {
         filter.message = Data(string.utf8)
-
+        
         if let outputImage = filter.outputImage {
             if let cgimg = context.createCGImage(outputImage, from: outputImage.extent) {
                 return UIImage(cgImage: cgimg)
             }
         }
-
+        
         return UIImage(systemName: "xmark.circle") ?? UIImage()
     }
 }

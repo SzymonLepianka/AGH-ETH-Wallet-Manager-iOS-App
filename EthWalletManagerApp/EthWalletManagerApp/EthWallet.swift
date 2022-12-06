@@ -15,7 +15,7 @@ struct EthWallet: Identifiable {
     var balance: Int
     var type: WalletType
     var mnemonics: String
-
+    
     init(id: UUID = UUID(),
          title: String,
          address: String,
@@ -30,7 +30,7 @@ struct EthWallet: Identifiable {
         self.balance = balance
         self.type = type
         self.mnemonics = mnemonics
-
+        
     }
 }
 
@@ -54,7 +54,7 @@ extension EthWallet {
              address: address,
              privateKey: privateKey,
              type: type,
-              mnemonics: mnemonics,
+             mnemonics: mnemonics,
              balance: Double(balance)
         )
     }
