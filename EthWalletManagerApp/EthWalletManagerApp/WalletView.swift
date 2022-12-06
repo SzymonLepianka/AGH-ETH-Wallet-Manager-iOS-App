@@ -44,7 +44,23 @@ struct WalletView: View {
             Button("Refresh") {
                 print("test")
                 showLoadingIndicator = true
-                //                newWalletData = EthWallet.Data()
+//                let ethAdd = EthereumAddress("0x67Fad66A4b7044c75214fA1f3ef33A0f072BDa62")
+//                var web3Rinkeby:web3?
+                Task {
+                    let ethAdd = EthereumAddress("0x67Fad66A4b7044c75214fA1f3ef33A0f072BDa62")
+                    let web3Rinkeby = await Web3.InfuraGoerliWeb3()
+//                    let balancebigint = web3Rinkeby.eth.getBalance(address: ethAdd).value
+                    let balancebigint = try await web3Rinkeby.eth.getBalance(for: ethAdd!)
+                    print(balancebigint)
+                    showLoadingIndicator = false
+//                    let wei = Web3.Utils.formatToEthereumUnits(balancebigint, toUnits: .wei, decimals: 18, decimalSeparator: ",")
+//                    Web3.Utils.
+//                    print("Ether Balance :\(String(describing: Web3.Utils.formatToEthereumUnits(balancebigint ?? 0)!))")
+                }
+//                let web3Rinkeby = Web3.InfuraGoerliWeb3()
+                
+//                let balancebigint = web3Rinkeby.eth.getBalance(address: ethAdd).value
+//                print("Ether Balance :\(String(describing: Web3.Utils.formatToEthereumUnits(balancebigint ?? 0)!))")
             }
         }
         .sheet(isPresented: $isPresentingNewWalletView) {
@@ -78,20 +94,15 @@ struct WalletView: View {
 func createAccount(title: String) -> EthWallet {
     
     let password = "web3swift"
-    let bitsOfEntropy: Int = 128 // Entropy is a measure of password strength. Usually used 128 or 256 bits.
-    let mnemonics = try! BIP39.generateMnemonics(bitsOfEntropy: bitsOfEntropy)!
+    let mnemonics = try! BIP39.generateMnemonics(bitsOfEntropy: 128)!
     //    print(mnemonics)
-    let keystore = try! BIP32Keystore(
-        mnemonics: mnemonics,
-        password: password,
-        mnemonicsPassword: "",
-        language: .english)!
+    let keystore = try! BIP32Keystore(mnemonics: mnemonics, password: password, mnemonicsPassword: "")!
     //    let title = "New Wallet"
     let keyData = try! JSONEncoder().encode(keystore.keystoreParams)
     let address = keystore.addresses!.first!.address
     
     //    print(address)
-    print(keystore.addresses)
+    //    print(keystore.addresses)
     let wallet = EthWallet(title: title, address: address, privateKey: "privateKey", balance: 0, mnemonics: mnemonics, type: .hd)
     return wallet
 }
