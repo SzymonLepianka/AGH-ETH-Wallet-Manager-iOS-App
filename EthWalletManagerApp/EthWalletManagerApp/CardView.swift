@@ -9,29 +9,23 @@ import SwiftUI
 
 struct CardView: View {
     let wallet: EthWallet
-
+    
     var body: some View {
-        HStack{
-            
-        
-        VStack(alignment: .leading) {
-            Text(wallet.title)
-                .accessibilityAddTraits(.isHeader)
-                .font(.headline)
-            Spacer()
-            //            VStack {
-            Label("\(wallet.address)", systemImage: "link.circle")
-                .accessibilityLabel("address: \(wallet.address)")
-            Spacer()
-            Label("\(wallet.balance)", systemImage: "suit.diamond.fill")
-                .accessibilityLabel("\(wallet.balance) ETH")
-            //                    .labelStyle(.)
-            //            }
-            //            .font(.caption)
+        HStack {
+            VStack(alignment: .leading) {
+                Text(wallet.title)
+                    .accessibilityAddTraits(.isHeader)
+                    .font(.headline)
+                Spacer()
+                Label("\(wallet.address)", systemImage: "link.circle")
+                    .accessibilityLabel("address: \(wallet.address)")
+                Spacer()
+                Label("\(wallet.balance)", systemImage: "suit.diamond.fill")
+                    .accessibilityLabel("\(wallet.balance) ETH")
+            }
+            .padding()
+            .foregroundColor(.brown)
         }
-        .padding()
-        .foregroundColor(.brown)
-    }
     }
 }
 

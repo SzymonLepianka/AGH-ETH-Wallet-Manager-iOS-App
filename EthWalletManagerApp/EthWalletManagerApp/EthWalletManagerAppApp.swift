@@ -18,8 +18,8 @@ struct EthWalletManagerAppApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                let _ = self.temp()  // compiles happily
-//                let _ = self.temp2()  // compiles happily
+                let _ = self.temp()
+//                let _ = self.temp2()
                 WalletView(wallets: $wallets)
             }
             .environment(\.managedObjectContext, persistenceController.container.viewContext)

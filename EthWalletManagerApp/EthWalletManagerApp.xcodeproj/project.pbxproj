@@ -21,6 +21,7 @@
 		AC9020C02923A8FE002625BC /* WalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9020BF2923A8FE002625BC /* WalletView.swift */; };
 		AC9020C22923AAAB002625BC /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9020C12923AAAB002625BC /* DetailView.swift */; };
 		AC9020C42923AB3C002625BC /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9020C32923AB3C002625BC /* CardView.swift */; };
+		AC9BA9D9293F53FD00A7D7A3 /* ActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = AC9BA9D8293F53FD00A7D7A3 /* ActivityIndicatorView */; };
 		ACB59CF4292CE1B100CFC0AE /* web3swift in Frameworks */ = {isa = PBXBuildFile; productRef = ACB59CF3292CE1B100CFC0AE /* web3swift */; };
 		ACB59CF7292CE32700CFC0AE /* ESPullToRefresh in Frameworks */ = {isa = PBXBuildFile; productRef = ACB59CF6292CE32700CFC0AE /* ESPullToRefresh */; };
 		ACB59CF9292CE54800CFC0AE /* DetailEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB59CF8292CE54800CFC0AE /* DetailEditView.swift */; };
@@ -70,6 +71,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACB59CF7292CE32700CFC0AE /* ESPullToRefresh in Frameworks */,
+				AC9BA9D9293F53FD00A7D7A3 /* ActivityIndicatorView in Frameworks */,
 				ACB59CF4292CE1B100CFC0AE /* web3swift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -174,6 +176,7 @@
 			packageProductDependencies = (
 				ACB59CF3292CE1B100CFC0AE /* web3swift */,
 				ACB59CF6292CE32700CFC0AE /* ESPullToRefresh */,
+				AC9BA9D8293F53FD00A7D7A3 /* ActivityIndicatorView */,
 			);
 			productName = EthWalletManagerApp;
 			productReference = AC9020902923A457002625BC /* EthWalletManagerApp.app */;
@@ -250,6 +253,7 @@
 			packageReferences = (
 				ACB59CF2292CE1B100CFC0AE /* XCRemoteSwiftPackageReference "web3swift" */,
 				ACB59CF5292CE32700CFC0AE /* XCRemoteSwiftPackageReference "pull-to-refresh" */,
+				AC9BA9D7293F53FD00A7D7A3 /* XCRemoteSwiftPackageReference "ActivityIndicatorView" */,
 			);
 			productRefGroup = AC9020912923A457002625BC /* Products */;
 			projectDirPath = "";
@@ -623,6 +627,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		AC9BA9D7293F53FD00A7D7A3 /* XCRemoteSwiftPackageReference "ActivityIndicatorView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/ActivityIndicatorView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		ACB59CF2292CE1B100CFC0AE /* XCRemoteSwiftPackageReference "web3swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/web3swift-team/web3swift";
@@ -642,6 +654,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		AC9BA9D8293F53FD00A7D7A3 /* ActivityIndicatorView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC9BA9D7293F53FD00A7D7A3 /* XCRemoteSwiftPackageReference "ActivityIndicatorView" */;
+			productName = ActivityIndicatorView;
+		};
 		ACB59CF3292CE1B100CFC0AE /* web3swift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = ACB59CF2292CE1B100CFC0AE /* XCRemoteSwiftPackageReference "web3swift" */;
