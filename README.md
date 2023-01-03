@@ -185,4 +185,10 @@ Atrybuty:
     
 ![image](https://user-images.githubusercontent.com/48469955/210343866-fefcff91-385e-472d-9ef6-e4eeb6217d76.png)
 
+## Brakujące funkcjonalności
+
+- Brak połączenia zapisu i odczytu (z bazy danych) z interfejsem użytkownika. Wykonany jest jedynie przykładowy zapis i odczyt.
+- Podczas odświeżania danych o kontach, pobierany jest aktualny balans, ale brakuje konwersji z Wei na Eth. Oraz brakuje aktualizacji balansu w interfejsie użytkownika.
+- Brak możliwości zeskanowania kodu QR, który umożliwiałby transfer funduszy.
+
 
