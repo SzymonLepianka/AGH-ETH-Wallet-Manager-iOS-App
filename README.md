@@ -82,7 +82,7 @@ Przetwarzane i przechowywane będą dane kont ETH, takie jak:
 
 ### Widok 4 – DetailEditView
 
-![image](https://user-images.githubusercontent.com/48469955/210276854-c4bb7f40-4a4e-4609-be57-705998d1489b.png)
+![image](https://user-images.githubusercontent.com/48469955/210345744-7b504168-3c98-4ea4-b681-1d617b3a8e24.png)
 
 #### Zadanie
 
@@ -123,19 +123,66 @@ Przetwarzane i przechowywane będą dane kont ETH, takie jak:
 4. Wprowadza swoją nazwę dla tego portfela.
 5. Portfel zostaje wygenerowany - znajduje się na liście portfeli.
 
-### Scenariusz 4 – transfer funduszy na inne konto
+![image](https://user-images.githubusercontent.com/48469955/210345512-3489173a-9b5d-463b-94a1-3bbd35caf126.png)
+
+![image](https://user-images.githubusercontent.com/48469955/210345635-04bf9f26-b21a-4df7-9902-04f8e4c52e37.png)
+
+![image](https://user-images.githubusercontent.com/48469955/210345669-57eaffb9-35e3-4030-aff9-d7256651c3db.png)
+
+### Scenariusz 4 – transfer funduszy na inne konto (jako nadawca)
 
 1. Użytkownik uruchamia aplikację. 
 2. Widzi listę swoich portfeli.
 3. Klika w wybrany portfel.
-4. Klika skaner kodów QR.
+4. Klika skaner kodów QR. (nie wystarczyło czasu na wykonanie tego punktu)
 5. Po zeskanowaniu potwierdza dane przelewu (adres odbiorcy, ilość, sieć).
 6. Fundusze zostają przesłane na dane konto, a stan konta użytkownika zostaje pomniejszony o daną kwotę.
 
-### Scenariusz 5 - odświeżanie danych o kontach użytkownika
+### Scenariusz 5 – transfer funduszy na inne konto (jako odbiorca)
+
+1. Użytkownik uruchamia aplikację. 
+2. Widzi listę swoich portfeli.
+3. Klika w wybrany portfel.
+4. Klika generator kodu QR.
+5. Udostępnia do zaskanowania kod dla zadawcy.
+6. Fundusze zostają przesłane na dane konto, a stan konta użytkownika zostaje pomniejszony o daną kwotę.
+
+### Scenariusz 6 - odświeżanie danych o kontach użytkownika
 
 1. Użytkownik uruchamia aplikację. 
 2. Widzi listę swoich portfeli.
 3. Klika w przycisk do odświeżania danych o swoich portfelach.
 4. Wyświetlanie zostaje ładowanie się - akcja w trakcie.
 5. Informacje zostają odświeżone - lista portfeli jest zaktualizowana.
+
+![image](https://user-images.githubusercontent.com/48469955/210345403-2004c765-352f-4a17-b86c-ecb71f9b100f.png)
+
+## Wybrane rozwiązanie do przechowywania danych
+
+Core Data
+
+### Opis
+
+Udało się wykonać połączenie z bazą danych (za pomocą PersistenceController.swift). W pliku EthWalletManagerAppApp.swift znajdują się:
+- func temp() - pozwalająca na odczyt danych z bazy,
+- func temp2() - pozwalająca na zapis danych do bazy.
+Nie zostało wykonane połączenie odczytu i zapisu z interfejsem użytkownika, za względu na brak czasu. Jedynie udało się wykonać przykładowe zapisy i odczyty danych hardcoded. 
+
+![image](https://user-images.githubusercontent.com/48469955/210344613-6989598a-8a9f-4424-a03c-1486901d3afd.png)
+
+## Model danych
+Stworzona encja:
+1. EWallet - każdy rekord odpowiada danemu portfelowi
+
+Atrybuty: 
+
+- title: String - nazwa portfela
+- address: String - adres (klucz publiczny) portfela
+- privateKey: String - klucz prywatny (hasło) portfela
+- balance: Double - ilość funduszy na koncie
+- type: String - typ portfela (bez albo z seed phrase)
+- mnemonics: String - opcja odzyskania portfela, losowe 12 słów
+    
+![image](https://user-images.githubusercontent.com/48469955/210343866-fefcff91-385e-472d-9ef6-e4eeb6217d76.png)
+
+
